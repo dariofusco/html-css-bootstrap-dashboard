@@ -13,7 +13,7 @@
     <title>Dashboard</title>
 </head>
 
-<body>
+<body class="vw-100">
 
     <header>
         <!--Sezione Navbar-->
@@ -33,21 +33,40 @@
                 <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-bell"></i></button>
             </div>
         </nav>
-        <!--Sezione Sidebar-->
-        <div class="d-flex flex-column justify-content-between bg-dark min-vh-100" style="max-width: 150px">
-            <div class="list-group">
-                <a href="#" class="list-group-item bg-dark text-light">Home</a>
-                <a href="#" class="list-group-item bg-dark text-light">Stats</a>
-                <a href="#" class="list-group-item bg-dark text-light">Signals</a>
-            </div>
-            <div class="list-group text-light">
-                <a href="#" class="list-group-item bg-dark text-light">Home</a>
-            </div>
-        </div>
+
     </header>
 
     <main>
-        <div class="container">
+
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link align-middle px-0 text-light">
+                                    <i class="fa-solid fa-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-light">
+                                    <i class="fa-solid fa-chart-simple"></i><span class="ms-1 d-none d-sm-inline">Stats</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link px-0 align-middle text-light">
+                                    <i class="fa-solid fa-signal"></i><span class="ms-1 d-none d-sm-inline">Signals</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="dropdown pb-4 text-light">
+                            <a href="#" class="nav-link px-0 align-middle text-light">
+                                <i class="fa-solid fa-gear"></i><span class="ms-1 d-none d-sm-inline">Admin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
             <div class="row justify-content-between bg-primary">
                 <div class="col-12 col-md-4">Nuovo Studente</div>
                 <div class="col-12 col-md-4">Boolean</div>
@@ -244,9 +263,11 @@
                     </div>
                 </div>
             </div>
-    </main>
+                </div>
+            </div>
+        </div>
 
-    <footer></footer>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
