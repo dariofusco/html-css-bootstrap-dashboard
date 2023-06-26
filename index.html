@@ -13,7 +13,7 @@
     <title>Dashboard</title>
 </head>
 
-<body>
+<body class="vw-100 overflow-hidden">
 
     <header>
         <!--Sezione Navbar-->
@@ -25,11 +25,13 @@
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <button class="btn" type="button"><i class="fa-solid fa-list"></i></button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <button class="btn" type="button"><i class="fa-solid fa-list"></i></button>
                 <button class="btn" type="button"><i
                         class="fa-solid fa-circle-question"></i></button>
                 <button class="btn" type="button"><i
                         class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
                 <button class="btn text-warning" type="button"><i class="fa-solid fa-bell"></i></button>
             </div>
         </nav>
@@ -40,8 +42,9 @@
 
         <div class="container-fluid">
             <div class="row flex-nowrap">
-                <div class="col px-sm-2 px-0 bg-dark">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
+                <!--Sidebar-->
+                <div class="col-auto px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 vh-100">
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li class="nav-item">
                                 <a href="#" class="nav-link align-middle px-0 text-light">
@@ -59,14 +62,17 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="dropdown text-light">
-                            <a href="#" class="nav-link px-0 align-middle text-light">
-                                <i class="fa-solid fa-gear"></i><span class="ms-1 d-none d-sm-inline">Admin</span>
-                            </a>
-                        </div>
+                        <ul class="nav nav-pills mb-5">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link px-0 align-middle text-light">
+                            <i class="fa-solid fa-gear"></i><span class="ms-1 d-none d-sm-inline">Admin</span>
+                        </a>
+                            </li>
+                        </ul>
+                        
                     </div>
                 </div>
-                <div class="col">
+                <div class="col vh-100 overflow-auto">
             <div class="row justify-content-between bg-primary py-3">
                 <div class="col-12 col-md-4 text-light">
                     <h3>Boolean</h3>
