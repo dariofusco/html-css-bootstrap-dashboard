@@ -13,7 +13,7 @@
     <title>Dashboard</title>
 </head>
 
-<body class="vw-100">
+<body>
 
     <header>
         <!--Sezione Navbar-->
@@ -25,12 +25,12 @@
                     <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel"
                         aria-label="Username" aria-describedby="basic-addon1">
                 </div>
-                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-list"></i></button>
-                <button class="btn btn-outline-success" type="submit"><i
+                <button class="btn" type="button"><i class="fa-solid fa-list"></i></button>
+                <button class="btn" type="button"><i
                         class="fa-solid fa-circle-question"></i></button>
-                <button class="btn btn-outline-success" type="submit"><i
+                <button class="btn" type="button"><i
                         class="fa-solid fa-ellipsis-vertical"></i></button>
-                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-bell"></i></button>
+                <button class="btn text-warning" type="button"><i class="fa-solid fa-bell"></i></button>
             </div>
         </nav>
 
@@ -40,8 +40,8 @@
 
         <div class="container-fluid">
             <div class="row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                <div class="col px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                             <li class="nav-item">
                                 <a href="#" class="nav-link align-middle px-0 text-light">
@@ -59,18 +59,31 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="dropdown pb-4 text-light">
+                        <div class="dropdown text-light">
                             <a href="#" class="nav-link px-0 align-middle text-light">
                                 <i class="fa-solid fa-gear"></i><span class="ms-1 d-none d-sm-inline">Admin</span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="container">
-            <div class="row justify-content-between bg-primary">
-                <div class="col-12 col-md-4">Nuovo Studente</div>
-                <div class="col-12 col-md-4">Boolean</div>
-                <div class="col-12 col-md-4">Studenti online negli ultimi 30 minuti</div>
+                <div class="col">
+            <div class="row justify-content-between bg-primary py-3">
+                <div class="col-12 col-md-4 text-light">
+                    <h3>Boolean</h3>
+                    <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                    <span class="badge rounded-pill text-bg-secondary">3 app</span>
+                    <span class="badge rounded-pill text-bg-secondary">Boolean mobile app</span>
+                    <span class="badge rounded-pill text-bg-secondary">Boolean web app</span>
+                    <span class="badge rounded-pill text-bg-secondary">Boolean blog app</span>
+                </div>
+                <div class="col-12 col-md-4 text-light">
+                    Studenti online negli ultimi 30 minuti
+                    <h3>125</h3>
+                </div>
+                <div class="col-12 col-md-4 text-light">
+                    Nuovo Studente
+                    <button type="button" class="btn btn-outline-light">+</button>
+                </div>
             </div>
             <div class="row justify-content-between">
                 <div class="col-12 col-md-6">
@@ -94,60 +107,84 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 75</th>
                                                 <td>15 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 76</th>
+                                                <td>16 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 77</th>
+                                                <td>17 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-warning">Process</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 78</th>
+                                                <td>18 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 79</th>
+                                                <td>19 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 80</th>
+                                                <td>20 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 81</th>
+                                                <td>21 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-danger">Failed</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">Classe 75</th>
-                                                <td>15 Feb 2021</td>
+                                                <th scope="row"><i class="fa-solid fa-code text-light bg-danger rounded-circle p-1"></i>Classe 82</th>
+                                                <td>22 Feb 2021</td>
                                                 <td>20%</td>
-                                                <td>Done</td>
-                                                <td>button</td>
+                                                <td><span class="badge text-bg-success">Done</span></td>
+                                                <td>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
